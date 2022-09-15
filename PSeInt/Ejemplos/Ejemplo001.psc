@@ -1,6 +1,7 @@
 
 
 Proceso Ejemplo001
+	// Definimos variables
 	Definir numero, resultado Como Entero;
 	
 	Escribir "Introduce un número";
