@@ -1,4 +1,4 @@
-Proceso Factorial_c
+Proceso Factorial_d
 	Definir n, x Como Entero;
 	Definir factorial Como Real;
 	
@@ -11,10 +11,10 @@ Proceso Factorial_c
 		factorial <- 1;
 		Si n > 0 Entonces
 			x <- 2;
-			Mientras (x <= n) Hacer
+			Repetir
 				factorial <- factorial * x;
 				x <- x+1;
-			FinMientras
+			Hasta Que x > n 
 		FinSi
 		Escribir "El factorial de ", n, " es ", factorial;
 	FinSi
