@@ -1,4 +1,4 @@
-package es.iesclaradelrey.dm1e2223.ut03.ejercicios;
+package es.iesclaradelrey.dm1e2223.ut02.ejercicios;
 
 public class Ejercicio01 {
 

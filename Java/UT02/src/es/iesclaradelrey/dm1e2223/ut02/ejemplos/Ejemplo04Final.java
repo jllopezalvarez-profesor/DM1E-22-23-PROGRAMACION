@@ -1,4 +1,4 @@
-package es.iesclaradelrey.dm1e2223.ut03.ejemplos;
+package es.iesclaradelrey.dm1e2223.ut02.ejemplos;
 
 import java.util.ArrayList;
 import java.util.List;

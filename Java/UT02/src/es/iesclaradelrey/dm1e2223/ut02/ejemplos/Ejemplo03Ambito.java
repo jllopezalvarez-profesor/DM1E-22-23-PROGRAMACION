@@ -1,4 +1,4 @@
-package es.iesclaradelrey.dm1e2223.ut03.ejemplos;
+package es.iesclaradelrey.dm1e2223.ut02.ejemplos;
 
 public class Ejemplo03Ambito {
 
@@ -11,7 +11,7 @@ public class Ejemplo03Ambito {
 			System.out.println(b);
 			System.out.println(c);
 		}
-System.out.println(c);
+		System.out.println(c);
 
 	}
 }
