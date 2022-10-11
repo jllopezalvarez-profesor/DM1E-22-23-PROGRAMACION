@@ -12,6 +12,7 @@ public class Ejemplo08StringsComparacion {
 		String b = "ABCD";
 		System.out.printf("Resultado de a == b: '%b'.\n", a == b);
 		System.out.printf("Resultado de a.equals(b): '%b'.\n", a.equals(b));
+		// Java nos dice que son iguales, con == o con equals.
 
 		// Comparación de cadenas solicitadas al usuario...
 		System.out.print("Introduce una cadena: ");
@@ -20,8 +21,13 @@ public class Ejemplo08StringsComparacion {
 		String y = sc.nextLine();
 		System.out.printf("Resultado de x == y: '%b'.\n", x == y);
 		System.out.printf("Resultado de x.equals(y): '%b'.\n", x.equals(y));
+		// Ahora Java nos dice que no son iguales, si usamos ==, pero que sí lo son si
+		// usamos equals.
 
-		
+		// De momento, dogma de fe: para saber si dos Strings son iguales:
+		// - SIEMPRE usar .equals, o .equalsIgnoreCase
+		// - NUNCA usar ==
+		// Veremos por qué pasa esto cuando estudiemos más a fondo objetos
 
 		sc.close();
 	}
