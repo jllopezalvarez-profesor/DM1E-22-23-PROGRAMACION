@@ -7,6 +7,9 @@ public class Ejemplo05JOptionPanePreguntarDatos {
 
 	public static void main(String[] args) {
 		// Pedir cadena de texto, y mostrarla.
+//		System.out.println("¿Como te llamas?");
+//		String nombre2 = sc.nextLine();
+		
 		String nombre = JOptionPane.showInputDialog("¿Cómo te llamas?");
 		JOptionPane.showMessageDialog(null, "Hola " + nombre);
 
