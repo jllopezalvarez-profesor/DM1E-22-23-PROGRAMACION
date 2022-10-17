@@ -1,8 +1,8 @@
-package es.iesclaradelrey.dm1e2223.ut04.ejemplos;
+package es.iesclaradelrey.dm1e2223.ut04.ejercicios01condicionales;
 
 import java.util.Scanner;
 
-public class EjercicioSeleccion03 {
+public class Ejercicio03 {
 
 	public static void main(String[] args) {
 
