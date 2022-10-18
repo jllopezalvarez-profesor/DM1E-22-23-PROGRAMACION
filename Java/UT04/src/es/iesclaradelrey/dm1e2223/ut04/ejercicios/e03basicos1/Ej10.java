@@ -4,11 +4,13 @@ public class Ej10 {
 
 	public static void main(String[] args) {
 
+		// 
 		
 		// Primero todos los números de 1 a 100;
-//		for (int i = 1; i <= 100; i++) {
-//			System.out.println(i);
-//		}
+		// Esto no lo pide el enunciado original
+		for (int i = 1; i <= 100; i++) {
+			System.out.println(i);
+		}
 
 		// Solo los pares (método 1)
 		for (int i = 1; i <= 200; i++) {

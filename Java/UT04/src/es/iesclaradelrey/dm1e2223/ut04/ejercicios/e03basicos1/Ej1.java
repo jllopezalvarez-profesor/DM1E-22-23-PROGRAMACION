@@ -5,13 +5,13 @@ import java.util.*;
 public class Ej1 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		int n1,n2,r;
+		int n1, n2, r;
 		System.out.println("Introducir numero 1");
-		n1=teclado.nextInt();
+		n1 = teclado.nextInt();
 		System.out.println("Introducir numero 2");
-		n2=teclado.nextInt();
-		r=n1+n2;
-		System.out.println("La suma de "+n1+" y "+n2+" es "+r);
+		n2 = teclado.nextInt();
+		r = n1 + n2;
+		System.out.println("La suma de " + n1 + " y " + n2 + " es " + r);
 		teclado.close();
 	}
 }
