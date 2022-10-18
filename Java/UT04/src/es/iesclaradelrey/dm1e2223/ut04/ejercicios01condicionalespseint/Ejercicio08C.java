@@ -1,4 +1,4 @@
-package es.iesclaradelrey.dm1e2223.ut04.ejercicios01condicionales;
+package es.iesclaradelrey.dm1e2223.ut04.ejercicios01condicionalespseint;
 
 import java.util.Scanner;
 
@@ -12,14 +12,18 @@ import java.util.Scanner;
 public class Ejercicio08C {
 
 	public static void main(String[] args) {
+		// Creamos el scanner para leer datos
 		Scanner scanner = new Scanner(System.in);
 
+		// Pedimos el primer número
 		System.out.print("Introduce el primer número: ");
 		int primerNumero = Integer.parseInt(scanner.nextLine());
 
+		// Pedimos el segundo número
 		System.out.print("Introduce el segundo número: ");
 		int segundoNumero = Integer.parseInt(scanner.nextLine());
 
+		// Pedimos el tercer número
 		System.out.print("Introduce el tercer número: ");
 		int tercerNumero = Integer.parseInt(scanner.nextLine());
 
@@ -52,7 +56,8 @@ public class Ejercicio08C {
 				System.out.printf("Los números ordenados son %d, %d, %d\n", tercerNumero, segundoNumero, primerNumero);
 			}
 		}
-		
+
+		// Cerramos el escanner
 		scanner.close();
 	}
 

@@ -1,4 +1,4 @@
-package es.iesclaradelrey.dm1e2223.ut04.ejercicios02iterativas;
+package es.iesclaradelrey.dm1e2223.ut04.ejercicios02iterativaspseint;
 
 import java.util.Scanner;
 
