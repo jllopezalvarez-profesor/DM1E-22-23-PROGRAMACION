@@ -1,4 +1,4 @@
-package es.iesclaradelrey.dm1e2223.ut04.ejercicios01condicionalespseint;
+package es.iesclaradelrey.dm1e2223.ut04.ejercicios.e01condicionalespseint;
 
 import java.util.Scanner;
 
