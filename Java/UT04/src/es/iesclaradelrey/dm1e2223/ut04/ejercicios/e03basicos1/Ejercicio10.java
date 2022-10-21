@@ -1,6 +1,6 @@
 package es.iesclaradelrey.dm1e2223.ut04.ejercicios.e03basicos1;
 
-public class Ej10 {
+public class Ejercicio10 {
 
 	public static void main(String[] args) {
 

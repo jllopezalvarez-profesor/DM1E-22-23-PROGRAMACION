@@ -2,7 +2,7 @@ package es.iesclaradelrey.dm1e2223.ut04.ejercicios.e03basicos1;
 
 import java.util.*;
 
-public class Ej1 {
+public class Ejercicio01 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		int n1, n2, r;

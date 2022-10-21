@@ -10,7 +10,7 @@ import java.util.Scanner;
  *         suma de los pares y el producto de los impares y escriba ambos
  *         resultados.
  */
-public class Ej13 {
+public class Ejercicio13 {
 	public static void main(String[] args) {
 		// Abrir Scanner
 		Scanner scanner = new Scanner(System.in);
