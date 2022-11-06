@@ -1,6 +1,5 @@
 package es.iesclaradelrey.dm1e2223.ut03.ejemplos;
 
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class Ejemplo06JOptionPaneConfirmar {

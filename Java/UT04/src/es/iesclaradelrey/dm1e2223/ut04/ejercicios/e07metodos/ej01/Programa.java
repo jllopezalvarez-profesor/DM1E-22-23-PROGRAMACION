@@ -22,6 +22,7 @@ public class Programa {
 		double resultado = metodos.suma(numero1, numero2);
 		System.out.printf("La suma de %f y %f es %f.\n", numero1, numero2, resultado);
 		
+		scanner.close();
 	}
 
 }

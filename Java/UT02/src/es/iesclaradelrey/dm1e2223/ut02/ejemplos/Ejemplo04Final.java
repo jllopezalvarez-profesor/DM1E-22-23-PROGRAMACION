@@ -1,8 +1,5 @@
 package es.iesclaradelrey.dm1e2223.ut02.ejemplos;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Ejemplo04Final {
 
 	public static void main(String[] args) {

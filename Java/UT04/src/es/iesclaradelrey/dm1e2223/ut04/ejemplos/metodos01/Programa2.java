@@ -1,7 +1,5 @@
 package es.iesclaradelrey.dm1e2223.ut04.ejemplos.metodos01;
 
-import java.util.Scanner;
-
 public class Programa2 {
 
 	public static void main(String[] args) {

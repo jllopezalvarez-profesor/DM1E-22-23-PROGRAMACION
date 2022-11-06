@@ -36,6 +36,7 @@ public class Ejercicio03 {
 
 		System.out.printf("Cuenta: %d, suma: %d\n\n", cuentaNumeros, suma);
 
+		scanner.close();
 	}
 
 }
