@@ -2,24 +2,21 @@ package es.iesclaradelrey.dm1e2223.ut05.ejemplos.arrays;
 
 /**
  * 
- * Ejemplo de como inicializar un array con valores conocidos.
+ * Ejemplo de cómo pasar un array como parámetro a un método.
  * 
  */
-public class Ejemplo06ParametroMetodo {
+public class Ejemplo06ArraysMetodos {
 
 	public static void main(String[] args) {
 
-		// Creación de un array e inicialización posición a posición
-		int[] array1 = new int[3];
-		array1[0] = 33;
-		array1[1] = 12;
-		array1[2] = 59;
-
 		// Creación de un array e inicialización en una sóla línea
-		int[] array2 = { 15, 98, 67 };
+		int[] array1 = { 15, 98, 67 };
 
-		// Llamamos a los métodos estáticos para mostrar el array
+		// Llamamos a método estático para mostrar el array
 		muestraContenidoArray(array1);
+		
+		// Creación de array llamando a un método que lo crea
+		int[] array2 = generaArrayNumerosAleatorios(10);
 		muestraContenidoArray(array2);
 
 	}
@@ -38,6 +35,12 @@ public class Ejemplo06ParametroMetodo {
 		System.out.println();
 	}
 
+	
+	/**
+	 * Crea un array con números aleatorios del 1 al 100.
+	 * @param cantidadNumeros tamaño del array que queremos generar
+	 * @return el array generado
+	 */
 	public static int[] generaArrayNumerosAleatorios(int cantidadNumeros) {
 		int[] numeros = new int[cantidadNumeros];
 		for (int i = 0; i < numeros.length; i++) {
