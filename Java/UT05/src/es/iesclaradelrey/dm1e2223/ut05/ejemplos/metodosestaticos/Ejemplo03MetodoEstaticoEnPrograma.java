@@ -22,6 +22,8 @@ public class Ejemplo03MetodoEstaticoEnPrograma {
 		// nombre de clase
 		resultado = factorial(4);
 		System.out.printf("El factorial de 4 es %d.\n", resultado);
+		
+		System.out.println(sumar(3, 5));
 	}
 
 	/**
@@ -36,6 +38,10 @@ public class Ejemplo03MetodoEstaticoEnPrograma {
 			producto *= numero--;
 		}
 		return producto;
+	}
+
+	public static int sumar(int a, int b) {
+		return a + b;
 	}
 
 }
