@@ -1,4 +1,4 @@
-package es.iesclaradelrey.dm1e2223.ut05.ejercicios;
+package es.iesclaradelrey.dm1e2223.ut05.ejercicios.arrays;
 
 /**
  * 
