@@ -23,25 +23,31 @@ public class Ejercicio07 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Escribe la palabra o frase a comprobar");
-		String palabra = sc.nextLine();
-		
-		if (esPalindromo(palabra)) {
-			System.out.println("Es un palíndromo");
-		}else {
-			System.out.println("No es un palíndromo");
-		}
-		
+
+//		System.out.println("Escribe la palabra o frase a comprobar");
+//		String palabra = sc.nextLine();
+//
+//		if (esPalindromo(palabra)) {
+//			System.out.println("Es un palíndromo");
+//		} else {
+//			System.out.println("No es un palíndromo");
+//		}
+
 		sc.close();
 		System.out.println(esPalindromo(null));
 		System.out.println(esPalindromo("arenera"));
 		System.out.println(esPalindromo("yo hago yoga hoy"));
 		System.out.println(esPalindromo("cactus"));
+		System.out.println("-".repeat(50));
 		System.out.println(esPalindromo2(null));
 		System.out.println(esPalindromo2("arenera"));
 		System.out.println(esPalindromo2("yo hago yoga hoy"));
 		System.out.println(esPalindromo2("cactus"));
+		System.out.println("-".repeat(50));
+		System.out.println(esPalindromo3(null));
+		System.out.println(esPalindromo3("arenera"));
+		System.out.println(esPalindromo3("yo hago yoga hoy"));
+		System.out.println(esPalindromo3("cactus"));
 	}
 
 	public static boolean esPalindromo(String cadena) {
@@ -73,7 +79,7 @@ public class Ejercicio07 {
 
 		cadena = cadena.replaceAll(" ", "");
 
-		for (int izquierda = 0; izquierda < cadena.length()/2; izquierda++) {
+		for (int izquierda = 0; izquierda < cadena.length() / 2; izquierda++) {
 			int derecha = (cadena.length() - 1) - izquierda;
 			if (cadena.charAt(izquierda) != cadena.charAt(derecha)) {
 				return false;
@@ -83,6 +89,18 @@ public class Ejercicio07 {
 		return true;
 	}
 
-	/**/
+	public static boolean esPalindromo3(String cadena) {
+		if (cadena == null) {
+			return false;
+		}
 
+		cadena = cadena.replaceAll(" ", "");
+
+		StringBuilder sb = new StringBuilder(cadena);
+		sb.reverse();
+		
+		return cadena.equals(sb.toString());
+		
+		//return cadena.equals(new StringBuilder(cadena).reverse().toString());
+	}
 }

@@ -13,19 +13,28 @@ package es.iesclaradelrey.dm1e2223.ut05.ejercicios.strings;
  * </pre>
  *
  */
-public class Ejercicio04_05 {
+public class Ejercicio04_05_12 {
 	public static void main(String[] args) {
 		// Pruebas con invertirCadena
 		System.out.println("Pruebas de invertirCadena:");
 		System.out.printf("La cadena 'murciélago' invertida con invertirCadena es %s.\n", invertirCadena("murciélago"));
 		System.out.printf("El resultado de invertir null con invertirCadena es %s.\n", invertirCadena(null));
 
+	
+		
 		// Pruebas con invertirCadena2
 		System.out.println("Pruebas de invertirCadena2:");
 		System.out.printf("La cadena 'murciélago' invertida con invertirCadena2 es %s.\n",
 				invertirCadena2("murciélago"));
 		System.out.printf("El resultado de invertir null con invertirCadena2 es %s.\n", invertirCadena2(null));
 
+		// Pruebas con invertirCadena3
+		System.out.println("Pruebas de invertirCadena3:");
+		System.out.printf("La cadena 'murciélago' invertida con invertirCadena3 es %s.\n",
+				invertirCadena3("murciélago"));
+		System.out.printf("El resultado de invertir null con invertirCadena3 es %s.\n", invertirCadena3(null));
+
+		
 		// Pruebas de rendimiento: repetir muchas veces una inversión con uno y otro
 		// método
 		int numRepeticiones = 100_000;
@@ -44,6 +53,13 @@ public class Ejercicio04_05 {
 
 	}
 
+	/**
+	 * Invierte una cadena de caracteres. Para hacerlo usa sólo objetos y métodos de
+	 * la clase String
+	 * 
+	 * @param cadenaOriginal cadena que deseamos invertir
+	 * @return la cadena invertida. Null si cadenaOriginal es null.
+	 */
 	public static String invertirCadena(String cadenaOriginal) {
 		if (cadenaOriginal == null) {
 			return null;
@@ -55,6 +71,12 @@ public class Ejercicio04_05 {
 		return cadenaResultado;
 	}
 
+	/**
+	 * Invierte una cadena de caracteres. Para hacerlo usa arrays.
+	 * 
+	 * @param cadenaOriginal cadena que deseamos invertir
+	 * @return la cadena invertida. Null si cadenaOriginal es null.
+	 */
 	public static String invertirCadena2(String cadenaOriginal) {
 		if (cadenaOriginal == null)
 			return null;
@@ -72,6 +94,21 @@ public class Ejercicio04_05 {
 			posFin--;
 		}
 		return String.valueOf(caracteres);
+	}
+
+	/**
+	 * Invierte una cadena de caracteres. Para hacerlo usa un objeto StringBuilder.
+	 * 
+	 * @param cadenaOriginal cadena que deseamos invertir
+	 * @return la cadena invertida. Null si cadenaOriginal es null.
+	 */
+	public static String invertirCadena3(String cadenaOriginal) {
+		if (cadenaOriginal == null)
+			return null;
+
+		StringBuilder sb = new StringBuilder(cadenaOriginal);
+		sb.reverse();
+		return sb.toString();
 	}
 
 }
