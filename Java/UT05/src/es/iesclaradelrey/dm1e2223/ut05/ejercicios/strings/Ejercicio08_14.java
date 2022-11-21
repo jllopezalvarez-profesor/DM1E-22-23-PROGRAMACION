@@ -50,10 +50,17 @@ public class Ejercicio08_14 {
 	public static String espejo2(String original) {
 		StringBuilder copia = new StringBuilder(original);
 		// Opción 1: invertir y eliminar el primero
-		copia.reverse();
+//		copia.reverse();
+//		if (copia.length() > 0) {
+//			copia.deleteCharAt(0);
+//		}
+
+		// Opción 2: eliminar el último y luego invertir
 		if (copia.length() > 0) {
-			copia.deleteCharAt(0);
+			copia.deleteCharAt(copia.length()-1);
 		}
+		copia.reverse();
+
 		return original + copia.toString();
 
 	}
