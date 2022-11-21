@@ -17,6 +17,7 @@ public class Ejemplo08ReplaceAll {
 				caracteres[i] = '_';
 		}
 		
+		
 		String c2 = String.valueOf(caracteres).toUpperCase();
 		
 		System.out.println(c2);
