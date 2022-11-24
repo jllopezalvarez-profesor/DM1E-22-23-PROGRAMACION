@@ -26,12 +26,14 @@ public class Ejercicio08_14 {
 		System.out.println(espejo("Hoy hay examen de LLMM"));
 		System.out.println(espejo(""));
 		System.out.println(espejo("ABC"));
+		System.out.println(espejo(null));
 
 		System.out.println("Versión con StringBuilder");
 		System.out.println(espejo2("bicicleta"));
 		System.out.println(espejo2("Hoy hay examen de LLMM"));
 		System.out.println(espejo2(""));
 		System.out.println(espejo2("ABC"));
+		System.out.println(espejo2(null));
 
 	}
 
@@ -48,6 +50,10 @@ public class Ejercicio08_14 {
 	}
 
 	public static String espejo2(String original) {
+		if (original == null) {
+			return null;
+		}
+		
 		StringBuilder copia = new StringBuilder(original);
 		// Opción 1: invertir y eliminar el primero
 //		copia.reverse();
