@@ -14,11 +14,13 @@ public class Ejercicio03ConversionTipos {
 		float destinoRealFloat;
 		
 		destinoEntero = origenEntero; // Asignaciones entre variables del mismo tipo OK.
-		destinoEntero = origenReal; // Tipos con un dominio mayor no caben en un tipo con dominio menor.
+		// Tipos con un dominio mayor no caben en un tipo con dominio menor.
+		// destinoEntero = origenReal; 
 		destinoRealDouble = origenEntero;
 		destinoRealDouble = origenReal;
 		destinoRealFloat = origenEntero;
-		destinoRealFloat = origenReal;
+		// Tipos con un dominio mayor no caben en un tipo con dominio menor.
+		// destinoRealFloat = origenReal;
 		
 		
 		

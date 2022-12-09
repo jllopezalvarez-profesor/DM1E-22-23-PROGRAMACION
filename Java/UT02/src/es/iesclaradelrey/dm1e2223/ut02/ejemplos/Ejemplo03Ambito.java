@@ -11,7 +11,8 @@ public class Ejemplo03Ambito {
 			System.out.println(b);
 			System.out.println(c);
 		}
-		System.out.println(c);
+		// La siguiente sentencia no compilaría si la descomentamos, porque c no existe en este punto.  
+		// System.out.println(c);
 
 	}
 }
