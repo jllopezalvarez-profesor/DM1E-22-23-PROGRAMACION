@@ -83,7 +83,7 @@ public class Ejercicio120CteMagicaSinArray {
 		// Acumulamos los que van desde el primero (centro de primera fila) a la derecha
 		// for (int i=(n/2); i<n;i++); // Reescribimos restando n/2 a cada valor del if
 		for (int i = 0; i < n - (n / 2); i++) {
-			suma = suma + (k + (i * salto));
+			suma = suma + (primerValor + (i * salto));
 		}
 
 		// Acumulamos los que van desde el penúltimo (a la izq. del primero) a la
