@@ -85,7 +85,7 @@ public class Persona {
 		Random rnd = new Random();
 		int numeroAleatorio = rnd.nextInt(100_000_000);
 		int resto = numeroAleatorio % 23;
-		return String.valueOf(numeroAleatorio) + LETRAS_DNI[resto];
+		return String.format("%08d", numeroAleatorio) + LETRAS_DNI[resto];
 	}
 
 	private boolean esSexoCorrecto(char sexo) {
@@ -125,6 +125,5 @@ public class Persona {
 		builder.append("]");
 		return builder.toString();
 	}
-	
-	
+
 }
