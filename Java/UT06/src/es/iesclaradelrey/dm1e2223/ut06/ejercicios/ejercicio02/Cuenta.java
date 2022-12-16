@@ -3,14 +3,27 @@ package es.iesclaradelrey.dm1e2223.ut06.ejercicios.ejercicio02;
 import java.util.Random;
 
 public class Cuenta {
-	private static final int MAX_LONG_NOMBRE = 50;
-	private static final int MAX_NUM_CUENTA = 10_000_000;
 	private static final int MIN_NUM_CUENTA = 1_000_000;
+	private static final int MAX_NUM_CUENTA = 10_000_000;
+	private static final int MAX_LONG_NOMBRE = 50;
+
 	private String numeroCuenta;
 	private String nif;
 	private String nombre;
 	private String apellidos;
 	private double saldoEuros;
+
+	public Cuenta(String nif, String nombre, String apellidos) {
+		this(nif, nombre, apellidos, 0);
+	}
+
+	public Cuenta(String nif, String nombre, String apellidos, double saldoEuros) {
+		this.setNumeroCuenta(creaNumeroCuenta());
+		this.setNif(nif);
+		this.setNombre(nombre);
+		this.setApellidos(apellidos);
+		this.setSaldoEuros(saldoEuros);
+	}
 
 	public String getNumeroCuenta() {
 		return numeroCuenta;
@@ -60,18 +73,6 @@ public class Cuenta {
 		this.saldoEuros = saldoEuros;
 	}
 
-	public Cuenta(String nif, String nombre, String apellidos) {
-		this(nif, nombre, apellidos, 0);
-	}
-
-	public Cuenta(String nif, String nombre, String apellidos, double saldoEuros) {
-		this.setNumeroCuenta(creaNumeroCuenta());
-		this.setNif(nif);
-		this.setNombre(nombre);
-		this.setApellidos(apellidos);
-		this.setSaldoEuros(saldoEuros);
-	}
-
 	private String creaNumeroCuenta() {
 		Random rnd = new Random();
 		return String.valueOf(rnd.nextInt(MIN_NUM_CUENTA, MAX_NUM_CUENTA));
@@ -92,7 +93,5 @@ public class Cuenta {
 		builder.append(apellidos);
 		return builder.toString();
 	}
-	
-	
 
 }
