@@ -1,4 +1,4 @@
-package es.iesclaradelrey.dm1e2223.ut06.ejercicios.ejercicio03;
+package es.iesclaradelrey.dm1e2223.ut06.ejercicios.ejercicio04;
 
 import java.util.Random;
 
@@ -12,17 +12,23 @@ public class Cuenta {
 	private String nombre;
 	private String apellidos;
 	private double saldoEuros;
+	private boolean admiteDescubierto;
 
 	public Cuenta(String nif, String nombre, String apellidos) {
-		this(nif, nombre, apellidos, 0);
+		this(nif, nombre, apellidos, 0, false);
 	}
 
-	public Cuenta(String nif, String nombre, String apellidos, double saldoEuros) {
+	public Cuenta(String nif, String nombre, String apellidos, boolean admiteDescubierto) {
+		this(nif, nombre, apellidos, 0, admiteDescubierto);
+	}
+
+	public Cuenta(String nif, String nombre, String apellidos, double saldoEuros, boolean admiteDescubierto) {
 		this.setNumeroCuenta(creaNumeroCuenta());
 		this.setNif(nif);
 		this.setNombre(nombre);
 		this.setApellidos(apellidos);
 		this.setSaldoEuros(saldoEuros);
+		this.setAdmiteDescubierto(admiteDescubierto);
 	}
 
 	public String getNumeroCuenta() {
@@ -73,6 +79,14 @@ public class Cuenta {
 		this.saldoEuros = saldoEuros;
 	}
 
+	public boolean admiteDescubierto() {
+		return admiteDescubierto;
+	}
+
+	public void setAdmiteDescubierto(boolean admiteDescubierto) {
+		this.admiteDescubierto = admiteDescubierto;
+	}
+
 	private String creaNumeroCuenta() {
 		Random rnd = new Random();
 		return String.valueOf(rnd.nextInt(MIN_NUM_CUENTA, MAX_NUM_CUENTA));
@@ -98,15 +112,27 @@ public class Cuenta {
 		this.setSaldoEuros(this.getSaldoEuros() + cantidadEuros);
 		// this.saldoEuros += cantidadEuros;
 	}
-	
+
 	public void Reembolsar(double cantidadEuros) {
+		if (cantidadEuros <= 0) {
+			System.err.println("La cantidad a reembolsar tiene que ser mayor que cero.");
+			return;
+		}
+
+		if (!admiteDescubierto) {
+			if ((this.getSaldoEuros() - cantidadEuros) < 0) {
+				System.err.println("No se ha realizado el reembolso porque se entraba ne descubierto");
+				return;
+			}
+		}
+
 		this.setSaldoEuros(this.getSaldoEuros() - cantidadEuros);
 		// this.saldoEuros -= cantidadEuros;
 	}
-	
+
 	public boolean estaEnNumerosRojos() {
 		return this.getSaldoEuros() < 0;
-		//return this.saldoEuros < 0;
+		// return this.saldoEuros < 0;
 	}
 
 }
