@@ -11,5 +11,7 @@ public class Programa {
 		System.out.println(cuenta);
 		cuenta.Reembolsar(30);
 		System.out.println(cuenta);
+		cuenta.Ingresar(-100);
+		System.out.println(cuenta);
 	}
 }

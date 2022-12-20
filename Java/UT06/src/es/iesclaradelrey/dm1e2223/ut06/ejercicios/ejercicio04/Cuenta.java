@@ -23,6 +23,7 @@ public class Cuenta {
 	}
 
 	public Cuenta(String nif, String nombre, String apellidos, double saldoEuros, boolean admiteDescubierto) {
+		
 		this.setNumeroCuenta(creaNumeroCuenta());
 		this.setNif(nif);
 		this.setNombre(nombre);
@@ -109,6 +110,10 @@ public class Cuenta {
 	}
 
 	public void Ingresar(double cantidadEuros) {
+		if (cantidadEuros <= 0) {
+			System.err.println("La cantidad a ingresar tiene que ser mayor que cero.");
+			return;
+		}
 		this.setSaldoEuros(this.getSaldoEuros() + cantidadEuros);
 		// this.saldoEuros += cantidadEuros;
 	}
@@ -121,7 +126,7 @@ public class Cuenta {
 
 		if (!admiteDescubierto) {
 			if ((this.getSaldoEuros() - cantidadEuros) < 0) {
-				System.err.println("No se ha realizado el reembolso porque se entraba ne descubierto");
+				System.err.println("No se ha realizado el reembolso porque se entraba en descubierto.");
 				return;
 			}
 		}
