@@ -1,4 +1,4 @@
-package es.iesclaradelrey.dm1e2223.ut06.ejercicios.ejecrcicio01;
+package es.iesclaradelrey.dm1e2223.ut06.ejercicios.ejercicio01;
 
 import java.util.Random;
 
