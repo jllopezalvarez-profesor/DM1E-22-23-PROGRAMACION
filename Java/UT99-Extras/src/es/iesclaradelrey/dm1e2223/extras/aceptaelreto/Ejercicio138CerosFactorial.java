@@ -7,13 +7,15 @@ public class Ejercicio138CerosFactorial {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		// todosFactoriales(135);
+		
+		todosFactoriales(135);
 
-		int numCasos = Integer.parseInt(scanner.nextLine());
-		for (int i = 0; i < numCasos; i++) {
-			int numero = Integer.parseInt(scanner.nextLine());
-			System.out.println(calcularNumeroCeros(numero));
-		}
+		
+//		int numCasos = Integer.parseInt(scanner.nextLine());
+//		for (int i = 0; i < numCasos; i++) {
+//			int numero = Integer.parseInt(scanner.nextLine());
+//			System.out.println(calcularNumeroCeros(numero));
+//		}
 
 		scanner.close();
 
